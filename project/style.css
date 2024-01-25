@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navbar section */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top:0;
+
+}
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity:0.4 ;
+}
+
+#logo {
+    margin:10px 34px ;
+
+}
+
+#logo img {
+   height: 59px;
+   margin: 3px 6px;
+   border-radius: 1.2rem;
+}
+#navbar ul  {
+    display: flex;
+}
+
+#navbar ul li {
+    /* color: white; */
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+    transition: 0.3s ease 0s;
+    
+}
+
+
+/* home section  */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 610px;
+    justify-content: center;
+    align-items: center;
+
+}
+#home::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: url(/assests/bg-img/bgwood.avif) no-repeat center center/cover;
+    height: 690px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+
+}
+#home h1 {
+    color: white;
+    text-align: center;
+}
+#home p {
+    color: white;
+    text-align: center;
+    font-weight: 1.5rem;
+}
+
+/* Services Sections */
+#services {
+    margin: 35px;
+    display:flex;
+}
+#services .box {
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 24px;
+    background-color:rgb(250, 247, 247);
+}
+#services .box img {
+    height: 160px;
+    margin: auto;
+    display: block;
+    
+}
+#services .box p {
+    letter-spacing: 1px;
+}
+
+
+/* Clients Section  */
+ #client-section {
+    position: relative;
+    height: 344px;
+ }
+
+ #client-section::before {
+    content: "";
+    position: absolute;
+    background: url('/assests/bg-img/bglight.avif') no-repeat center center/cover;;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.3;
+ }
+
+ #clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ #clients img{
+   height: 124px;
+   padding: 8px;
+ }
+
+ /* Contact Section */
+ #contact {
+    position: relative;
+    margin-top: 34px;
+ }
+ #contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    background: url('/assests/contact\ us.jpg');
+ }
+ #contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+    
+ }
+ #contact-box form {
+    width: 40%;
+ }
+ #contact-box label {
+    font-size: 1.3rem;
+    
+ }
+ #contact-box textarea {
+    margin-top: 10px;
+ }
+
+ #contact-box input, #contact-box textarea {
+    width: 100%;
+    padding: 5px;
+    border-radius: 9px;
+    font-size: 1.1rem;
+    outline: none;
+    border: none;
+ }
+
+ #contact-box button {
+    padding: 6px 24px;
+    margin-left: 40%;
+    margin-top: 4px;
+    border: none;
+    border-radius: 3px;
+    font-weight: bold;
+    background: orange;
+    color: white;
+ }
+ #contact-box button:hover {
+    color: black;
+    font-weight: bolder;
+    background: white;
+
+ }
+
+
+ footer {
+    background: #695d5d;
+    color: white;
+    padding: 9px 20px;
+    margin-top: 8px;
+    margin-bottom: 4px;
+ }
+
+
+#btn {
+    padding: 6px 20px;
+    color: white;
+    border: 2px solid white;
+    background-color:orange;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#btn:hover {
+    color: black;
+    background-color: white;
+    font-weight: bold;
+    transition: 0,3s ease-in-out;
+}
+
+/* utility classes*/
+.h-primary {
+    font-size: 3.8rem;
+    font-family: sans-serif;
+    padding: 12px;
+    color: #f48905;
+}
+.h-secondary {
+    font-family: sans-serif;
+    font-size: 2.1rem;
+    padding: 12px;
+    color: orange
+}
+.center {
+    text-align: center;
+}
+
